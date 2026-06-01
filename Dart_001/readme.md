@@ -19,7 +19,7 @@ Without Dart, you cannot write Flutter applications.
 
 | Year | Event |
 |------|-------|
-| **2011** | Dart was introduced by Lars Bak and Kasper Lund at Google |
+| **2011** | Dart was introduced by Lars Bak and Kasper at Google |
 | **2013** | Dart 1.0 officially released |
 | **2018** | Dart 2.0 released — major improvements, strong typing added |
 | **2019** | Flutter adopted Dart as its official language |
@@ -27,7 +27,7 @@ Without Dart, you cannot write Flutter applications.
 | **2023** | Dart 3.0 released — 100% sound null safety, records and patterns added |
 | **Present** | Dart is one of the fastest-growing languages due to Flutter's popularity |
 
-**Founders:** Lars Bak (worked on V8 JavaScript engine at Google) and Kasper Lund.
+**Founders:** Lars Bak (worked on V8 JavaScript engine at Google) and Kasper.
 
 **Why Google made Dart:**
 JavaScript had performance and scalability problems for large applications.
