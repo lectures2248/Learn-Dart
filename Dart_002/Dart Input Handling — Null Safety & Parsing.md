@@ -71,26 +71,6 @@ Bas yeh yaad rakhna:
 
 ---
 
-## `.trim()` Kyun Lagaya?
-
-Kabhi kabhi jab Enter dabate hain toh peeche hidden whitespace ya `\r` aa jaata hai:
-
-```
-"5\r"   →   int.parse() is pe bhi crash karega
-"  5 "  →   same problem
-```
-
-`.trim()` woh sab saaf kar deta hai:
-
-```dart
-"  5  ".trim()   // ban jaata hai "5"
-"5\r".trim()     // ban jaata hai "5"
-```
-
-Parse karne se pehle hamesha trim karo.
-
----
-
 ## Sahi Wala Code
 
 ```dart
@@ -99,11 +79,11 @@ import 'dart:io';
 void main() {
   stdout.write("Enter number one: ");
   String input1 = stdin.readLineSync() ?? "0";
-  int num_one = int.tryParse(input1.trim()) ?? 0;
+  int num_one = int.tryParse(input1) ?? 0;
 
   stdout.write("Enter number two: ");
   String input2 = stdin.readLineSync() ?? "0";
-  int num_two = int.tryParse(input2.trim()) ?? 0;
+  int num_two = int.tryParse(input2) ?? 0;
 
   print(num_one + num_two);
 }
@@ -112,14 +92,3 @@ void main() {
 Double `??` dhyan se dekho — pehla wala `readLineSync` ka null handle karta hai, doosra wala `tryParse` ka null handle karta hai agar input galat tha.
 
 ---
-
-## Short Summary
-
-- `??` — null mile toh default value use karo
-- `int.parse()` — galat input pe crash karta hai
-- `int.tryParse()` — galat input pe null deta hai, crash nahi karta
-- `.trim()` — hidden spaces aur `\r` ko hata deta hai
-
----
-
-*Bas itna hi tha. Ek baar pura picture samajh aa jaye toh simple lagta hai.*
