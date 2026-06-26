@@ -1,0 +1,68 @@
+Switch Case Statement:
+	"A switch case statement is a control structure in programming that provides a way to perform different actions or execute different
+					 code blocks based on the value of an expression or variable."
+
+						***-----------------------------------***
+
+Now, let's discuss how a switch case statement differs from an if-else statement:
+
+Switch Case: In a switch case statement, the expression's value is evaluated once, and then the program jumps to the corresponding case label.
+It's efficient when you have many possible values to check against a single expression.
+
+If-Else: In an if-else statement, each condition (if and else-if conditions) is evaluated sequentially until a true condition is found, and
+then the corresponding block of code is executed. This means that in an if-else chain, multiple conditions can be evaluated.
+
+							***-----------------------------------***
+
+Example 1:
+	stdout.write("Enter a day of the week:");
+  String? dayOfWeek = stdin.readLineSync();
+
+  switch (dayOfWeek) {
+    case "Monday" || "MONDAY" || "monday":
+      print("It's the start of the workweek.");
+      break;
+    case "Tuesday":
+      print("It's a weekday.");
+      break;
+    case "Wednesday":
+      print("It's a weekday.");
+      break;
+    case "Thursday":
+      print("It's a weekday.");
+      break;
+    case "Friday":
+      print("TGIF! It's Friday!");
+      break;
+    case "Saturday":
+          print("It's the weekend.");
+      break;
+    case "Sunday":
+      print("It's the weekend.");
+      break;
+    default:
+      print("Invalid day of the week.");
+  }
+}
+
+								***-----------------------------------***
+Example 2:
+  print("Enter a task (e.g., 'work', 'study', 'relax', 'exercise'):");
+  String task = stdin.readLineSync() ?? "";
+
+  switch (task.toLowerCase()) {
+    case "work":
+      print("Time to get productive!");
+      break;
+    case "study":
+      print("Let's hit the books.");
+      break;
+    case "relax":
+      print("Take a break and unwind.");
+      break;
+    case "exercise":
+      print("Time to break a sweat!");
+      break;
+    default:
+      print("Unknown task. Please enter a valid task.");
+  }

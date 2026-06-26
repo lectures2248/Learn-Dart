@@ -1,0 +1,51 @@
+
+Ternary operator:
+	"A ternary operator is a shortcut for writing a simple "if-else" statement in programming. It lets you decide between two values or
+	 expressions based on a condition. Think of it as a way to ask a question and get one of two possible answers in a single line of code."
+
+The syntax of the ternary operator is as follows:
+	condition ? expression1 : expression2
+
+							**-------------------**
+
+Ternary operators are used in programming for several reasons:
+
+1- This can make your code shorter and easier to read, especially for simple conditions.
+
+2- Ternary operators can improve code readability
+
+3- using ternary operators can help reduce the indentation and make your code look cleaner.
+
+so on....
+
+
+Example:
+	// Without ternary operator
+String result;
+if (condition) {
+    result = "It's true!";
+} else {
+    result = "It's false!";
+}
+
+// With ternary operator
+String result = condition ? "It's true!" : "It's false!";
+
+							**----------------**
+Example1:
+	void main() {
+  int number = 5;
+  
+  // Using the ternary operator to determine if the number is even or odd
+  String result = (number % 2 == 0) ? 'Even' : 'Odd';
+  
+  print('The number $number is $result.');
+}
+
+Example2:
+ int age = 18;
+  
+  // Using the ternary operator to check eligibility
+  String eligibility = (age >= 18) ? 'Eligible to vote' : 'Not eligible to vote';
+  
+  print('At the age of $age, you are $eligibility.');
