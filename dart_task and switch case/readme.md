@@ -1,21 +1,3 @@
-None selected 
-
-Skip to content
-Using Gmail with screen readers
-dart 
-34 of many
-ss
-Inbox
-
-Mujtaba Baloch <mujtabaaptechmsg@gmail.com>
-Attachments
-Tue 3 Mar, 09:32
-to me
-
-
- One attachment
-  •  Scanned by Gmail
-dart oop
 In this task, you will create a simple console-based shopping system using Dart basics. 
 The program should allow the user to view products, add products to a cart, calculate the total bill,apply discount, and exit the program.
 You must use lists, maps, loops, conditions, switch statements, and basic control statements.
